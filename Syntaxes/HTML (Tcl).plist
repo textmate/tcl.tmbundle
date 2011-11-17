@@ -8,10 +8,6 @@
 		<string>adp</string>
 		<string>inc</string>
 	</array>
-	<key>foldingStartMarker</key>
-	<string>(&lt;(?i:(head|table|div|style|script|ul|ol|form|dl))\b.*?&gt;|\{)</string>
-	<key>foldingStopMarker</key>
-	<string>(&lt;/(?i:(head|table|div|style|script|ul|ol|form|dl))&gt;|\})</string>
 	<key>keyEquivalent</key>
 	<string>^~T</string>
 	<key>name</key>

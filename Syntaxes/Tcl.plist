@@ -8,10 +8,6 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!/.*\btclsh\b</string>
-	<key>foldingStartMarker</key>
-	<string>\{\s*$</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*\}</string>
 	<key>keyEquivalent</key>
 	<string>^~T</string>
 	<key>name</key>
