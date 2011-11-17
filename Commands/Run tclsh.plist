@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
 	<string>saveActiveFile</string>
 	<key>command</key>
-	<string>${TM_TCLSH:=tclsh} "$TM_FILEPATH"|pre</string>
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+"${TM_TCLSH:=tclsh}" "$TM_FILEPATH"|pre</string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@r</string>
 	<key>name</key>
 	<string>Run</string>
-	<key>output</key>
-	<string>showAsHTML</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
+	<key>requiredCommands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>tclsh</string>
+			<key>locations</key>
+			<array>
+				<string>/opt/local/bin/tclsh</string>
+				<string>/usr/local/bin/tclsh</string>
+			</array>
+			<key>variable</key>
+			<string>TM_TCLSH</string>
+		</dict>
+	</array>
 	<key>scope</key>
 	<string>source.tcl</string>
 	<key>uuid</key>
 	<string>59700A78-7CB7-11D9-875B-000A95E13C98</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
