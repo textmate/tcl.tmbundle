@@ -10,7 +10,7 @@
 try_man () {
 	if man n -w "$word" &amp;&gt;/dev/null; then
 		page=$("$TM_SUPPORT_PATH/bin/html_man.sh" n "$word")
-		echo "&lt;meta http-equiv='Refresh' content='0;URL=tm-file://$page'&gt;"
+		echo "&lt;meta http-equiv='Refresh' content='0;URL=file://$page'&gt;"
 		exit_show_html
 	fi
 }
