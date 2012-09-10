@@ -5,7 +5,10 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>word=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
+
+word=${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
 
 try_man () {
 	if man n -w "$word" &amp;&gt;/dev/null; then
@@ -19,21 +22,29 @@ try_man
 
 echo "Couldn’t find documentation in 'man n' for “${word}”"
 </string>
-	<key>dontFollowNewOutput</key>
-	<true/>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
 	<string>Documentation for Word / Selection (man) copy</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.tcl</string>
+	<key>semanticClass</key>
+	<string>lookup.define.tcl</string>
 	<key>uuid</key>
 	<string>56F8C50E-B263-430C-9301-A34EDF05E9F5</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

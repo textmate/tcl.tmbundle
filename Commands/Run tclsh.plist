@@ -39,6 +39,8 @@
 	</array>
 	<key>scope</key>
 	<string>source.tcl</string>
+	<key>semanticClass</key>
+	<string>process.run.script.tcl</string>
 	<key>uuid</key>
 	<string>59700A78-7CB7-11D9-875B-000A95E13C98</string>
 	<key>version</key>
