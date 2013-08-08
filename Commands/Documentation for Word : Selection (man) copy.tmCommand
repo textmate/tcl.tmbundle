@@ -31,7 +31,7 @@ echo "Couldn’t find documentation in 'man n' for “${word}”"
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
-	<string>Documentation for Word / Selection (man) copy</string>
+	<string>Documentation for Word / Selection (man)</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>

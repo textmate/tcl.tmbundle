@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>#!/usr/bin/env tcl
+</string>
+	<key>name</key>
+	<string>#!/usr/bin/env tcl</string>
+	<key>scope</key>
+	<string>L:dyn.caret.begin.document</string>
+	<key>tabTrigger</key>
+	<string>tcl</string>
+	<key>uuid</key>
+	<string>A2C95E2E-6D2F-4718-9708-2C99FF5FDB11</string>
+</dict>
+</plist>
