@@ -5,9 +5,10 @@
 	<key>fileTypes</key>
 	<array>
 		<string>tcl</string>
+		<string>irule</string>
 	</array>
 	<key>firstLineMatch</key>
-	<string>^#!/.*\btclsh\b</string>
+	<string>^#!/.*\btclsh</string>
 	<key>keyEquivalent</key>
 	<string>^~T</string>
 	<key>name</key>
